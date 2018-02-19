@@ -2,8 +2,8 @@
 <%- js('lib/jquery/jquery.min') %>
 <%- js('lib/justified-gallery/jquery.justifiedGallery.min.js') %>
 <%- js('js/main') %>
-<!-- search -->
 <% if (page.search){ %>
+<!-- search -->
   <%- js('js/search.js') %>
   <script type="text/javascript">
     var inputArea = document.querySelector("#search-input");
@@ -33,8 +33,8 @@
     })
   </script>
 <% } %>
-<!-- Google Analytics -->
 <% if (theme.plugins.google_analytics){ %>
+    <!-- Google Analytics -->
     <script type="text/javascript">
         (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -44,8 +44,8 @@
         ga('send', 'pageview');
     </script>
 <% } %>
-<!-- Disqus Comments -->
-<% if (theme.plugins.disqus_shortname){ %>
+<% if (theme.plugins.disqus_shortname && is_post()){ %>
+    <!-- Disqus Comments -->
     <script type="text/javascript">
         var disqus_shortname = '<%= theme.plugins.disqus_shortname %>';
 
