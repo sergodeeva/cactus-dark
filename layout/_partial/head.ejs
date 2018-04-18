@@ -36,7 +36,7 @@
         <% } %>
     <% } %>
     <!-- title -->
-    <title><%= page.title ? page.title : config.title %></title>
+	<title><%= page.title ? page.title + " | " + config.title : config.title %></title>
     <!-- styles -->
     <%- css('css/style') %>
     <!-- rss -->
