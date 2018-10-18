@@ -21,7 +21,7 @@ A responsive, white and simple [Hexo](http://hexo.io) theme for a personal websi
 
 - Fully responsive
 - Disqus
-- Googe analytics
+- Google analytics
 - Font Awesome icons
 - Pick your own code highlighting scheme
 - Configurable navigation menu
@@ -125,7 +125,7 @@ Add you Google Analytics `tracking_id` to the theme's `_config.yml`.
 
   ```
   plugins:
-      gooogle_analytics: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+      google_analytics: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
   ```
 
 ### Comments
